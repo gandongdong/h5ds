@@ -10,16 +10,34 @@ const globalOptions = {
   }
 };
 
+/**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
 export default class BasicService {
   constructor(baseURL = apiUrl) {
     this.baseURL = baseURL;
     this.apiVersion = '/api/v1';
   }
 
+/**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
   get(url, options) {
     return this._request('get', url, null, options);
   }
 
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
   post(url, data, options) {
     return this._request('post', url, data, options);
   }
@@ -28,14 +46,46 @@ export default class BasicService {
     return this._request('put', url, data, options);
   }
 
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+  */
+  
   delete(url, options) {
     return this._request('delete', url, null, options);
   }
 
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+  */
+  
   setToken(token) {
     globalOptions.headers['Authorization'] = `Basic ${token}`;
   }
 
+  /**
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+*/
   _request(method, url, data, options = {}) {
     const headers = Object.assign({}, globalOptions.headers, options.headers);
     const opt = {
