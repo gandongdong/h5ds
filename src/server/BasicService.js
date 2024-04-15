@@ -27,14 +27,27 @@ export default class BasicService {
   * 1. 1111111
   * 2. 22222222
   * @param {*} 3333333333
-*/
-  get(url, options) {
-    return this._request('get', url, null, options);
-  }
 
-  /**
   * 这里尝试分步骤处理方式
   * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+    * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  * 2. 22222222
+  * @param {*} 3333333333
+
+  * 这里尝试分步骤处理方式
+  * 1. 1111111
+  *1
   * 2. 22222222
   * @param {*} 3333333333
 */
@@ -61,6 +74,7 @@ export default class BasicService {
   * 这里尝试分步骤处理方式
   * 1. 1111111
   * 2. 22222222
+  * 121213
   * @param {*} 3333333333
 */
 
@@ -71,6 +85,9 @@ export default class BasicService {
   * 2. 22222222
   * @param {*} 3333333333
 */
+  get(url, options) {
+    return this._request('get', url, null, options);
+  }
   /**
   * 这里尝试分步骤处理方式
   * 1. 1111111
